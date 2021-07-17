@@ -1,0 +1,14 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+
+$title[Known CRBT issues]
+
+$description[
+```fix
+Everything's fine as of now :)```
+]
+
+$footer[$getVar[prefix]issues ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

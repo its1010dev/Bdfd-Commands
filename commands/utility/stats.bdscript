@@ -1,0 +1,61 @@
+$nomention
+$argsCheck[>1;$getVar[wrong] **You need to mention someone after `$getVar[prefix]stats`**]
+
+$title[$username[$message[1]]#$discriminator[$message[1]] // Stats]
+
+$addField[Profile:;
+
+Name: $getVar[Name;$message[1]]
+About: $getVar[About;$message[1]]
+rep: $getVar[rep;$message[1]]
+userbanner: $getVar[userbanner;$message[1]]
+border color: $getVar[border color;$message[1]]
+Profile badges: $getVar[Profile badges;$message[1]]
+
+;yes]
+
+$addField[Banners:;
+
+banner blue: $getVar[banner blue;$message[1]]
+banner red: $getVar[banner red;$message[1]]
+banner green: $getVar[banner green;$message[1]]
+banner turquoise: $getVar[banner turquoise;$message[1]]
+banner dark blue: $getVar[banner dark blue;$message[1]]
+banner pink: $getVar[banner pink;$message[1]]
+banner purple: $getVar[banner purple;$message[1]]
+
+;yes]
+
+$addField[Badges:;
+
+badge french: $getVar[badge french;$message[1]]
+badge russian: $getVar[badge russian;$message[1]]
+badge brazil: $getVar[badge brazil;$message[1]]
+badge usa: $getVar[badge usa;$message[1]]
+badge goodmeal: $getVar[badge goodmeal;$message[1]]
+badge developer: $getVar[badge developer;$message[1]]
+badge halloween: $getVar[badge halloween;$message[1]]
+badge dollidot: $getVar[badge dollidot;$message[1]]
+
+;yes]
+
+$addField[Misc:;
+
+JaaJ: $getVar[JaaJ;$message[1]]
+bank: $getVar[bank;$message[1]]
+invbanner: $getVar[invbanner;$message[1]]
+invbadge: $getVar[invbadge;$message[1]]
+invmisc: $getVar[invmisc;$message[1]]
+
+;yes]
+
+
+$addField[Moderation:;
+
+strikes: $getUserVar[strikes;$message[1]]
+strikelog: $getUserVar[strikelog;$message[1]]
+blacklist: $checkContains[$getVar[blacklist];$message[1]]
+beta tester: $checkContains[$getVar[beta testers];$message[1]]
+data collect: $getUserVar[data collect;$message[1]]
+
+;yes]

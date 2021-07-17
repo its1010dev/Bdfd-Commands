@@ -1,0 +1,22 @@
+$nomention
+$onlyIf[$checkContains[$toLowercase[$message[1]];profile]==true;]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This category of commands is currently disabled on this server.**]
+
+$title[Help // Profile commands:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]profile <user mention | user id | username>` : Returns the mentioned user's/your profile.
+• `$getVar[prefix]items <user mention | user id | username>` : Returns your whole inventory.
+• `$getVar[prefix]use {item name}` : Uses the item if it's in your inventory.
+• `$getVar[prefix]name {message}` : Sets or changes your profile name.
+• `$getVar[prefix]about {message}` : Sets or changes your about message.
+;• `$getVar[prefix]award {user mention | user id | username}` : Rewards the mentioned user with one award point.
+]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

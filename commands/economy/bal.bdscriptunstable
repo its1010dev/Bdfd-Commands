@@ -1,0 +1,16 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$suppressErrors
+$enabled[$getServerVar[category economy];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[$username[$findUser[$message]]#$discriminator[$findUser[$message]] // Balance]
+
+$description[
+
+$getVar[purplet] $getVar[bank;$findUser[$message]] Purplets
+]
+
+$footer[$getVar[prefix]bal ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$findUser[$message]]]

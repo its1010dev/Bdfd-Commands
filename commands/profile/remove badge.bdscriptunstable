@@ -1,0 +1,22 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+$onlyIf[$getVar[$toLowercase[badge $message];$authorID]==bought;$getVar[wrong] **You do not own this item!**]
+
+$onlyIf[$checkContains[$toLowercase[$message];french;russian;brazil;goodmeal;halloween;developer;usa;dollidot]==true;]
+
+$onlyIf[$checkContains[$getVar[Profile badges;$authorID];$getVar[ibadge $toLowercase[$message]]]==true;$getVar[wrong] **This badge is not currently on your profile.**]
+
+$setVar[Profile badges;$replaceText[$replaceText[$replaceText[$getVar[Profile badges;$authorID];$getVar[ibadge $toLowercase[$message]];;1];‎;;-1]; ;;-1];$authorID]
+
+$title[$getVar[correct] Badge removed]
+
+$description[The $getVar[ibadge $toLowercase[$message]] badge has been removed from your profile.
+
+$addField[Your profile badges:;
+$replaceText[$replaceText[$replaceText[$getVar[Profile badges;$authorID];$getVar[ibadge $toLowercase[$message]];;1];‎;;-1]; ;;-1]
+;no]
+
+]
+
+$color[$getVar[green]]

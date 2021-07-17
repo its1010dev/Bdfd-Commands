@@ -1,0 +1,17 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$globalCooldown[1h;$getVar[wrong] **You need to wait %time% before you can work again.**]
+$enabled[$getServerVar[category economy];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$setVar[bank;$sum[$getVar[bank;$authorID];$random[20;50]];$authorID]
+
+$title[$getVar[correct] Working...]
+
+$description[
+You worked hard and got $getVar[purplet] **$random[20;50] Purplets**.
+]
+
+$footer[$getVar[prefix]work ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

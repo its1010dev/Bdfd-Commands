@@ -1,0 +1,23 @@
+$nomention
+$suppressErrors
+$deletecommand
+$deleteIn[3s]
+
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category moderation];$getVar[wrong] **This command is currently disabled on this server.**]
+$argsCheck[>1;$getVar[wrong] **You need to specify how many messages you want me to purge!**]
+$onlyPerms[managemessages;$getVar[wrong] **You need to be able to delete messages for me to purge some!**]
+$onlyIf[$message[1]<=500;$getVar[wrong] **You can only purge up to 500 messages per command!**]
+$cooldown[2s;$getVar[wrong] **No need to spam the command!**]
+$onlyBotPerms[managemessages;$getVar[wrong] **I need the permission to manage messages to purge them!**]
+
+$clear[$sum[$message[1];1];;no]
+
+$title[CRBT mod logs]
+
+$description[$getVar[correct] Purged $message[1] messages.]
+
+$footer[$getVar[prefix]purge ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

@@ -1,0 +1,15 @@
+$onlyIf[$getServerVar[Welcome channel]!=Not set;]
+$nomention
+$replaceText[$channelSendMessage[$getServerVar[Welcome channel]];$; ;-1]
+$title[Welcome $username to $serverName[$guildID]!]
+
+$description[
+$replaceText[$replaceText[$replaceText[$replaceText[$getServerVar[Welcome message];<servername>;$serverName[$guildID];-1];<mention>;<@$authorID>;-1];<members>;$membersCount;-1];<username>;$username;-1]
+]
+
+$footer[$username#$discriminator[$authorID] • Message not affiliated with CRBT.]
+$footerIcon[$authorAvatar]
+
+$thumbnail[$serverIcon[$guildID]]
+
+$color[$getVar[border color]]

@@ -1,0 +1,20 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$argsCheck[1;$getVar[wrong] **You need to insert a valid channel name!**]
+$onlyAdmin[$getVar[wrong] **Only administrators can change modlog channels.**]
+$enabled[$getServerVar[category moderation];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$setServerVar[modlog channel;$mentionedChannels[1]]
+
+$title[$getVar[correct] Modlog channel changed]
+
+$addField[New/actual:
+;$replaceText[$replaceText[$checkContains[$message;None];true;None;1];false;<#$mentionedChannels[1]>;1];yes]
+
+$addField[Previous:
+;$replaceText[$replaceText[$checkContains[$getServerVar[modlog channel];None];true;None;1];false;<#$getServerVar[modlog channel]>;1];yes] 
+
+$footer[$getVar[prefix]set modlog ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

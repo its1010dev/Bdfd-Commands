@@ -1,0 +1,12 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category fun];$getVar[wrong] **This command is currently disabled on this server.**]
+$argsCheck[1;$getVar[wrong] **You need to input a valid Minecraft Java username!**]
+
+$title[$message[1] // Minecraft skin]
+$description[[Download avatar](https://mc-heads.net/skin/$message[1])]
+$image[https://mc-heads.net/body/$message[1]]
+$footer[$getVar[prefix]skin ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

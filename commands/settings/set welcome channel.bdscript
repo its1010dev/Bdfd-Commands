@@ -1,0 +1,23 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$argsCheck[1;$getVar[wrong] **You need to insert a valid channel name!**]
+$onlyAdmin[$getVar[wrong] **Only administrators can change welcome channels.**]
+
+$setServerVar[Welcome channel;$mentionedChannels[1]]
+
+$title[$getVar[correct] Welcome channel changed]
+
+$description[The welcome channel has been successfully changed.
+
+$addField[New:
+;$replaceText[$replaceText[$checkContains[$message;None];true;None;1];false;<#$mentionedChannels[1]>;1];yes]
+
+$addField[Previous:
+;$replaceText[$replaceText[$checkContains[$getServerVar[Welcome channel];None];true;None;1];false;<#$getServerVar[Welcome channel]>;1];yes] 
+
+]
+
+$footer[$getVar[prefix]set welcome channel ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

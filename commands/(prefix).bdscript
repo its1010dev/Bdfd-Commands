@@ -1,0 +1,13 @@
+$nomention
+$onlyIf[$getVar[data collect;$authorID]==enable;]
+$onlyIf[$message!=;]
+
+$useChannel[775431942786908160]
+$time[CET]
+`Ping: $pingms - ET: $executionTimems`
+$author[$username#$discriminator[$authorID]]
+$description[<@$authorID> in [**$serverName[$guildID]**](https://discord.com/channels/$guildID/$channelID/$messageID):
+```//$message```]
+$footer[$date • $hour:$minute:$second]
+$footerIcon[$authorAvatar]
+$addTimestamp

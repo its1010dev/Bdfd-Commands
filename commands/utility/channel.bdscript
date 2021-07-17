@@ -1,0 +1,23 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[#$channelName[$mentionedChannels[1]]'s information]
+
+$description[
+
+$addField[Mention:
+;<#$mentionedChannels[1]>;yes]
+
+$addField[ID:
+;$mentionedChannels[1];yes]
+
+$addField[Channel creation:
+;$creationDate[$mentionedChannels[1]];yes]
+
+]
+
+$footer[$getVar[prefix]channel ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

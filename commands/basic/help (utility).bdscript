@@ -1,0 +1,26 @@
+$onlyIf[$checkContains[$toLowercase[$message[1]];utility]==true;]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This category of commands is currently disabled on this server.**]
+
+$nomention
+
+$title[Help // Utility:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]emote {custom emote}` : Displays the custom emote's info (doesn't work for standard emoji).
+• `$getVar[prefix]role {role name}` : Displays the role's info.
+• `$getVar[prefix]channel {channel mention}` : Displays the channel's info.
+• `$getVar[prefix]server` : Displays info about the current server.
+• `$getVar[prefix]user <user mention | user ID | username>`  : Displays info about the mentioned user/you.
+• `$getVar[prefix]avatar <user mention | user ID | username>` : Shows the highest quality image of the user's avatar.
+• `$getVar[prefix]CRBT` : Returns CRBT's uptime, developer info, etc...
+• `$getVar[prefix]stats {user ID}` : Displays advanced info on the user.
+
+]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

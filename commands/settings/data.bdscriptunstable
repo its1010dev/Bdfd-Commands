@@ -1,0 +1,10 @@
+$onlyIf[$checkContains[$toLowercase[$message[1]];enable;disable]==true;]
+$onlyIf[$getVar[data collect;$authorID]!=$replaceText[$replaceText[$message[1];enable;yes;1];disable;no;1];$getVar[wrong] **Your data $replaceText[$replaceText[$message[1];enable;is already logged!;1];disable;is already not logged.;1]**]
+$nomention
+$suppressErrors
+$setVar[data collect;$toLowercase[$message[1]];$authorID]
+$title[$getVar[$toLowercase[$message[1]]] Data collect $toLowercase[$message[1]]d]
+$description[$replaceText[$replaceText[$message[1];disable;Your actions won't appear in the private CRBT logging anymore.;1];enable;Your actions will now appear in the private CRBT logging;1]]
+$footer[$getVar[prefix]data $toLowercase[$message[1]] • Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+$color[$getVar[border color;$authorID]]

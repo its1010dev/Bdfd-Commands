@@ -1,0 +1,22 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$onlyIf[$checkContains[$toLowercase[$message];how much;how;which;who;where]==false;$getVar[wrong] **I can only answer to direct questions, making your question impossible for me to answer...**]
+$argsCheck[>2;$getVar[wrong] **That ain't a question... :thinking:**]
+$enabled[$getServerVar[category fun];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[<:8ball:779663921656627200> 8-Ball]
+
+$description[
+
+$addField[Your question:
+;$message]
+
+$addField[8-Ball:
+;$randomText[Yes;No;Surely;Maybe;Maybe not;I don't think so;I don't know;That's for sure;That's a big yes from me;I'm pretty sure that... no.;Are you sure of your question? Because of course it's no.]]
+
+]
+
+$footer[$getVar[prefix]8ball ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

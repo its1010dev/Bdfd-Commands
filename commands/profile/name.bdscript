@@ -1,0 +1,22 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$argsCheck[>1;$getVar[wrong] **You need to add something after `$getVar[prefix]name` in order to change it.**]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$setVar[Name;$message;$authorID]
+
+$title[$getVar[correct] Profile name changed]
+
+$description[Your profile name has been successfully changed! 
+
+$addField[Previous:;
+`$getVar[Name;$authorID]`;yes]
+$addField[New/actual:;
+`$message`;yes]
+
+]
+
+$footer[$getVar[prefix]name ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

@@ -1,0 +1,9 @@
+$nomention
+
+var: $noMentionMessage
+default: $getVar[$noMentionMessage]
+global user: $getVar[$noMentionMessage;$authorID]
+global mentioned: $getVar[$noMentionMessage;$mentioned[1]]
+local user: $getUserVar[$noMentionMessage]
+local mentioned: $getVar[$noMentionMessage;$mentioned[1]]
+server: $getServerVar[$noMentionMessage]

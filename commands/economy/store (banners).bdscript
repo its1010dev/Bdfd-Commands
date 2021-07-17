@@ -1,0 +1,41 @@
+$nomention
+$onlyIf[$checkContains[$toLowercase[$message[1]];banners]==true;]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[CRBT Store // Banners]
+
+$addField[Balance:;
+$getVar[purplet] $getVar[bank;$authorID] Purplets
+;no]
+
+$addField[Page 1:;
+
+• [Blue](https://clembs.xyz/crbt/blue.png) - $getVar[purplet] $getVar[banner blue]
+`$getVar[prefix]buy banner blue`
+
+• [Green](https://clembs.xyz/crbt/green.png) - $getVar[purplet] $getVar[banner green]
+`$getVar[prefix]buy banner green`
+
+• [Red](https://clembs.xyz/crbt/red.png) - $getVar[purplet] $getVar[banner red]
+`$getVar[prefix]buy banner red`
+
+• [Dark blue](https://clembs.xyz/crbt/dark%20blue.png) - $getVar[purplet] $getVar[banner dark blue]
+`$getVar[prefix]buy banner dark blue`
+
+• [Turquoise](https://clembs.xyz/crbt/turquoise.png) - $getVar[purplet] $getVar[banner turquoise]
+`$getVar[prefix]buy banner turquoise`
+;yes]
+
+$addField[Page 2:;
+
+• [Pink](https://clembs.xyz/crbt/pink.png) - $getVar[purplet] $getVar[banner pink]
+`$getVar[prefix]buy banner pink`
+
+• [Purple](https://clembs.xyz/crbt/purple.png) - $getVar[purplet] $getVar[banner purple]
+`$getVar[prefix]buy banner purple`
+;yes]
+
+$footer[$getVar[prefix]store ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

@@ -1,0 +1,10 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category fun];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$image[$randomText[put your image links here]]
+
+$footer[$getVar[prefix]pédiluve ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

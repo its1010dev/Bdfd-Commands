@@ -1,0 +1,16 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+
+$title[CRBT // Invite]
+
+$description[• [Give no permissions](https://discord.com/oauth2/authorize?client_id=595731552709771264&scope=bot&permissions=0) (useful if you have a global bots role with permissions set already)
+
+• [Recommanded setup](https://clembs.xyz/crbt/invite) (all commands will work on that setup)
+
+• [Invite with administrator perms](https://discord.com/oauth2/authorize?client_id=595731552709771264&scope=bot&permissions=8)
+]
+
+$footer[$getVar[prefix]invite ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

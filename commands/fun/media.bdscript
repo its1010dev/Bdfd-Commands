@@ -1,0 +1,6 @@
+$nomention
+$onlyIf[$checkContains[$toLowercase[$message];crbt;chibi;clembs full;clembs wordmark;tcm logo;tcm wordmark]==true;]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category fun];$getVar[wrong] **This command is currently disabled on this server.**]
+
+https://media.clembs.xyz/$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$toLowercase[$message];crbt;CRBT.png;1];clembs full;Clembs%20full.png;1];clembs wordmark;Clembs%20wordmark.png;1];tcm logo;TCM%20logo.png;1];tcm wordmark;TCM%20Wordmark.png;1]

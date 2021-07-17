@@ -1,0 +1,16 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category economy];$getVar[wrong] **This command is currently disabled on this server.**]
+$onlyIf[$getVar[$toLowercase[banner $message];$authorID]==bought;$getVar[wrong] **You do not own this item!**]
+$onlyIf[$checkContains[$toLowercase[$message];blue;green;red;turquoise;dark blue;pink;purple;halloween]==true;]
+$suppressErrors
+
+$setVar[userbanner;https://clembs.xyz/crbt/$replaceText[$message; ;%20;-1].png;$authorID]
+
+$title[$getVar[correct] Banner applied]
+
+$description[Your banner has been applied to your profile.]
+
+$image[https://clembs.xyz/crbt/$replaceText[$message; ;%20;-1].png]
+
+$color[$getVar[green]]

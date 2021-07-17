@@ -1,0 +1,21 @@
+$onlyIf[$checkContains[$toLowercase[$message[1]];fun]==true;]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category fun];$getVar[wrong] **This category of commands is currently disabled on this server.**]
+
+$nomention
+
+$title[Help // Fun commands:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]skin {MC Java username}`
+Returns the skin model and download link for the mentioned MC Java player
+• `$getVar[prefix]8ball {question}` 
+Ask a question to 8ball. He ***A L W A Y S*** tells the truth
+]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

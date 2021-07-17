@@ -1,0 +1,41 @@
+$nomention
+$onlyIf[$checkContains[$toLowercase[$message[1]];badges]==true;]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[CRBT Store // Badges]
+
+$addField[Balance:;
+$getVar[purplet] $getVar[bank;$authorID] Purplets
+;no]
+
+$addField[Page 1:;
+• $getVar[ibadge usa] US flag - $getVar[purplet] $getVar[badge usa]
+`$getVar[prefix]buy badge usa`
+
+• $getVar[ibadge french] French flag -$getVar[purplet] $getVar[badge french]
+`$getVar[prefix]buy badge french`
+
+• $getVar[ibadge russian] Russian flag - $getVar[purplet] $getVar[badge russian]
+`$getVar[prefix]buy badge russian`
+
+• $getVar[ibadge brazil] Brazilian flag - $getVar[purplet] $getVar[badge brazil]
+`$getVar[prefix]buy badge brazil`
+
+• $getVar[ibadge goodmeal] Good meal - $getVar[purplet] $getVar[badge goodmeal]
+`$getVar[prefix]buy badge goodmeal`
+;yes]
+
+$addField[Page 2:;
+
+• $getVar[ibadge developer] Developer - $getVar[purplet] $getVar[badge developer]
+`$getVar[prefix]buy badge developer`
+
+• $getVar[ibadge dollidot] Dollidot - $getVar[purplet] $getVar[badge dollidot]
+`$getVar[prefix]buy badge dollidot`
+:warning: Limited edition - until 02/01/2021
+;yes]
+
+$footer[$getVar[prefix]store ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

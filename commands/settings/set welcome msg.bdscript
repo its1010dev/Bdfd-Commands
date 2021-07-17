@@ -1,0 +1,29 @@
+~
+
+NOTE: WELCOME COMMANDS WERE EXPERIMENTAL AND HAVE A CHANGE OF NOT WORKING
+NOTE2: ENABLE SERVER INTENTS IN YOUR DISCORD APPLICATION SETTINGS
+
+~
+
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$onlyAdmin[$getVar[wrong] **Only administrators can set welcome messages.**]
+
+$setServerVar[Welcome message;$message]
+
+$title[$getVar[correct] Welcome message changed]
+
+$description[The welcome message has been changed successfully!
+
+$addField[Previous welcome message:
+;`$getServerVar[Welcome message]`;no]
+
+$addField[New welcome message:
+;`$message`;no]
+
+]
+
+$footer[$getVar[prefix]set welcome msg ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

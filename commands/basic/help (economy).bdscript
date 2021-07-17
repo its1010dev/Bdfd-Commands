@@ -1,0 +1,30 @@
+$nomention
+$onlyIf[$checkContains[$toLowercase[$message[1]];economy]==true;]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category economy];$getVar[wrong] **This category of commands is currently disabled on this server.**]
+
+$title[Help // Economy:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]work`
+Gives a small random amount of Purplets (1h cooldown).
+• `$getVar[prefix]give {user mention} {amount}`
+Gives the amount of wallet Purplets to the mentioned user.
+• `$getVar[prefix]store <category>`
+To view all items available for purchase.
+• `$getVar[prefix]bal <user mention | user ID | username>`
+Displays the mentioned user's/your total Purplets balance.
+• `$getVar[prefix]items <user mention | user ID | username>`
+Returns your/the user's whole inventory.
+• `$getVar[prefix]use {item name}`
+Uses the item if it's in your inventory.
+• `$getVar[prefix]buy {item name}`
+Buys the selected item.
+]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

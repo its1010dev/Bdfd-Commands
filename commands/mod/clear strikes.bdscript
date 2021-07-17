@@ -1,0 +1,27 @@
+$nomention
+$suppressErrors
+$onlyPerms[kick;$getVar[wrong] **You need some moderation power (kick permissions minimum) to clear strikes*]
+$onlyIf[$mentioned[1]!=;$getVar[wrong] **You need to mention someone to clear their strike list first!**]
+$enabled[$getServerVar[category moderation];$getVar[wrong] **This command is currently disabled on this server.**]
+$textSplit[$getUserVar[strikelog;$mentioned[1]];,]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+
+$setUserVar[strikes;0;$mentioned[1]]
+$setUserVar[strikelog;　;$mentioned[1]]
+
+$title[Cleared $getUserVar[strikes;$mentioned[1]] strikes:]
+
+$description[
+All of $username[$mentioned[1]]#$discriminator[$mentioned[1]]'s strikes were cleared:
+
+$splitText[2]
+$splitText[3]
+$splitText[4]
+$splitText[5]
+$splitText[6]
+]
+
+$footer[$getVar[prefix]clear strikes ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

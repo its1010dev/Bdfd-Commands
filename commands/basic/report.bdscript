@@ -1,0 +1,22 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$cooldown[5m;$getVar[wrong] **Please be patient and don't spam reports!** (Time left: %time%)]
+$argsCheck[>1;$getVar[wrong] **You need to insert a valid report message**]
+
+$useChannel[#channel ID]
+$author[$username#$discriminator[$authorID]]
+$authorIcon[$authorAvatar]
+
+$description[
+From user: 
+**$username#$discriminator[$authorID]** ($authorID)
+
+On server:
+**$serverName[$guildID]** ($guildID)
+
+Report:
+```$message```
+]
+
+$color[$getVar[border color;$authorID]]
+$addCmdReactions[$getVar[correct]]

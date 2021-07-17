@@ -1,0 +1,10 @@
+$nomention
+
+$title[CRBT // Ping]
+$description[Ping: $pingms
+Hosted with BDFD on **[port 16](https://botdesignerdiscord.com/status)**]
+
+$footer[$getVar[prefix]ping ▪ Executed par $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

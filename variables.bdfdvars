@@ -1,0 +1,172 @@
+Note: You will need to paste each name and value into the respective slots in the BDFD app.
+
+name= JaaJ
+value= 0
+
+name= Name
+value= Not set
+
+name= About
+value= Not set
+
+name= bank
+value= 0
+
+name= rep
+value= 0
+
+name= Welcome message
+value= Welcome <mention> to <servername>! This server now has <members> members.
+
+name= Welcome channel
+value= Not set
+
+name= banner blue
+value= 300
+
+name= banner red
+value= 300
+
+name= banner green
+value= 300
+
+name= banner turquoise
+value= 300
+
+name= userbanner
+value= 
+
+name= category utility
+value= yes
+
+name= category economy
+value= yes
+
+name= border color
+value= 9A192F
+
+name= Muted
+value= Muted
+
+name= category fun
+value= yes
+
+name= category profile
+value= yes
+
+name= strikes
+value= 0
+
+name= badge french
+value= 150
+
+name= ibadge french
+value= :flag_fr:
+
+name= wrong
+value= <:wrong:779663878425673769>
+
+name= category inventory
+value= yes
+
+name= correct
+value= <:correct:779663900496494612>
+
+name= enable
+value= <:toggleon:779663899015643166>
+
+name= disable
+value= <:toggleoff:779663899976794134>
+
+name= red
+value= E20000
+
+name= ibadge russian
+value= :flag_ru:
+
+name= badge russian
+value= 150
+
+name= badge brazil
+value= 250
+
+name= ibadge brazil
+value= :flag_br:
+
+name= green
+value= 0DC5A0
+
+name= banner dark blue
+value= 300
+
+name= purplet
+value= <:purplet:779663920238690334>
+
+name= invbanner
+value= 
+
+name= invbadge
+value= 
+
+name= invmisc
+value= 
+
+name= category moderation
+value= yes
+
+name= strikelog
+value= 
+
+name= modlog channel
+value= None
+
+name= ibadge goodmeal
+value= <:good_meal:768948885162295326>
+
+name= badge goodmeal
+value= 1000
+
+name= ibadge halloween
+value= <:Halloween:771397984754728961>
+
+name= badge halloween
+value= 0
+
+name= blacklist
+value= 
+
+name= beta testers
+value= 
+
+name= banner pink
+value= 300
+
+name= banner purple
+value= 300
+
+name= badge developer
+value= 150
+
+name= ibadge developer
+value= :technologist:
+
+name= ibadge usa
+value= :flag_us:
+
+name= badge usa
+value= 150
+
+name= banner halloween
+value= no
+
+name= prefix
+value= //
+
+name= betaprefix
+value= /\
+
+name= data collect
+value= enable
+
+name= version
+value= 7.0.4

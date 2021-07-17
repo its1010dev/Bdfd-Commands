@@ -1,0 +1,26 @@
+$nomention
+$argsCheck[0;]
+$enabled[$getServerVar[category economy];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[CRBT Store]
+
+$description[
+Indicate a item category to choose from:
+
+$addField[Balance:;
+$getVar[purplet] $getVar[bank;$authorID] Purplets
+;no]
+
+$addField[Profile badges:;
+`$getVar[prefix]store Badges`
+;yes]
+
+$addField[Profile banners:;
+`$getVar[prefix]store Banners`
+;yes]
+]
+
+$footer[$getVar[prefix]store ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

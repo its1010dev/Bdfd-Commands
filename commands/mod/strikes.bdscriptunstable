@@ -1,0 +1,21 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category moderation];$getVar[wrong] **This command is currently disabled on this server.**]
+$textSplit[$getUserVar[strikelog;$findUser[$message[1]]];,]
+
+$title[$username[$findUser[$message[1]]] // Strikes]
+
+$description[
+**$getUserVar[strikes;$findUser[$message[1]]] strikes out of 5**
+
+$splitText[2] 
+$splitText[3]
+$splitText[4]
+$splitText[5]
+$splitText[6]
+]
+
+$footer[$getVar[prefix]strikes ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$findUser[$message]]]

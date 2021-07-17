@@ -1,0 +1,19 @@
+$nomention
+$textSplit[$message[1];:]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This command is currently disabled on this server.**]
+$argsCheck[1;$getVar[wrong] **You need to insert a valid emote besides `$getVar[prefix]emote`**]
+
+$title[Information about :$splitText[2]:]
+
+$description[
+
+[Open in browser](https://cdn.discordapp.com/emojis/$replaceText[$splitText[3];>;;1].$replaceText[$replaceText[*$splitText[1]*;*<*;png;1];*<a*;gif;1]?size=4096)
+]
+
+$image[https://cdn.discordapp.com/emojis/$replaceText[$splitText[3];>;;1].$replaceText[$replaceText[*$splitText[1]*;*<*;png?size=4096;1];*<a*;gif;1]]
+
+$footer[$getVar[prefix]emote ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

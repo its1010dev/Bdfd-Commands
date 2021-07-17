@@ -1,0 +1,21 @@
+$onlyIf[$checkContains[$toLowercase[$message[1]];settings]==true;]
+
+$nomention
+
+$title[Help // CRBT Settings:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]data {enable | disable}` : Enables or disables CRBT's data collect.
+• `$getVar[prefix]set color {HEX color code}` : Changes CRBT's embed color.
+• `$getVar[prefix]enable {category}` : Enables all commands of that category.
+• `$getVar[prefix]disable {category}` : Disables all commands of that category.
+• `$getVar[prefix]set modlog {channel}` : To configure where the mod messages are sent.
+
+]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

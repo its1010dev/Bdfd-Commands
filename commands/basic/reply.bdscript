@@ -1,0 +1,19 @@
+$nomention
+$argsCheck[>0;]
+$onlyForIDs[your ID here;$getVar[wrong] **Only verified CRBT staff can send replies!**]
+
+$dm[$message[1]]
+
+$title[Reply to your report from $username#$discriminator[$authorID]]
+
+$description[
+
+$replaceText[$message;$message[1]; ;1]
+
+]
+
+$footer[This message was sent from a verified CRBT developer. Consider joining the support server for more info here: https://clembs.xyz/crbt/server]
+
+$color[$getVar[border color]]
+
+$addCmdReactions[$getVar[correct]]

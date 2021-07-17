@@ -1,0 +1,17 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[$username[$findUser[$message]]#$discriminator[$findUser[$message]] // Avatar]
+
+$addField[Available resolutions:;
+**[4096px]($userAvatar[$findUser[$message]]?size=4096) | [2048px]($userAvatar[$findUser[$message]]?size=2048) | [1024px]($userAvatar[$findUser[$message]]?size=1024) | [512px]($userAvatar[$findUser[$message]]?size=512) | [256px]($userAvatar[$findUser[$message]]?size=256)
+**
+;no]
+
+$image[$userAvatar[$findUser[$message]]?size=2048]
+
+$footer[$getVar[prefix]avatar ▪ Executed par $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

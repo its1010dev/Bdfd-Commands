@@ -1,0 +1,31 @@
+$nomention 
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[$username[$findUser[$message]]#$discriminator[$findUser[$message]] // User info]
+
+$addField[Account creation:;
+$creationDate[$findUser[$message]]
+;yes]
+
+$addField[Highest server role:;
+<@&$highestRole[$findUser[$message]]>
+;yes]
+
+$addField[Administrator:
+;$replaceText[$replaceText[$isAdmin[$findUser[$message]];false;No;1];true;Yes;1];yes]
+
+$addField[ID:;
+$findUser[$message]
+;yes]
+
+$addField[Mention:;
+<@$findUser[$message]>
+;yes]
+
+$thumbnail[$userAvatar[$findUser[$message]]?size=512]
+
+$footer[$getVar[prefix]user ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$findUser[$message]]]

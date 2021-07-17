@@ -1,0 +1,53 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$title[CRBT // Bot information]
+
+$addField[CRBT version:;
+$getVar[version]
+;yes]
+
+$addField[Mention:;
+<@595731552709771264>
+;yes]
+
+$addField[ID:;
+595731552709771264
+;yes]
+
+$addField[Stats for nerds:;
+Ping: $pingms
+Uptime: $uptime
+Servers: $serverCount
+Members: $allMembersCount
+;yes]
+
+$addField[Created on:;
+2019-07-02
+;yes]
+
+$addField[Join the CRBT community:;
+[Join](https://clembs.xyz/crbtsupport)
+[Mirror link](https://discord.gg/6uNwP46)
+;yes]
+
+$addField[Invite CRBT:;
+`$getVar[prefix]invite`
+[Website](https://clembs.xyz/crbt)
+;yes]
+
+$addField[Vote for CRBT:;
+[top.gg](https://top.gg/bot/595731552709771264/vote)
+;yes]
+
+$addField[Created by Clembs#2925:;
+[Website](https://clembs.xyz)
+;yes]
+
+$thumbnail[$userAvatar[595731552709771264]]
+
+$footer[$getVar[prefix]CRBT ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

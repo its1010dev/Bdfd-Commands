@@ -1,0 +1,31 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$argsCheck[>1;$getVar[wrong] **This item does not exist!**]
+$onlyIf[$toLowercase[$message]!=bought;$getVar[wrong] **You already have this item!**]
+$enabled[$getServerVar[category economy];$getVar[wrong] **This command is currently disabled on this server.**]
+$onlyIf[$getVar[bank;$authorID]>=$getVar[$toLowercase[$message]];$getVar[wrong] You don't have enough Purplets to buy this item!]
+
+$onlyIf[$checkContains[$toLowercase[$message];banner pink;banner purple;banner blue;banner turquoise;banner dark blue;banner red;banner green;badge french;badge russian;badge brazil;badge goodmeal;badge developer;badge usa;badge dollidot]==true;]
+
+$suppressErrors
+
+$setVar[inv$toLowercase[$message[1]];$getVar[inv$toLowercase[$message[1]];$authorID], $toLowercase[$message];$authorID]
+$setVar[$toLowercase[$message];bought;$authorID]
+$setVar[bank;$sub[$getVar[bank;$authorID];$getVar[$toLowercase[$message];$authorID]];$authorID]
+
+$title[$getVar[correct] Purchase successful]
+
+$description[You have successfully bought `$toLowercase[$message]`. To use it, use `$toLowercase[$message]`.
+$addField[New balance:;
+$getVar[purplet] $sub[$getVar[bank;$authorID];$getVar[$toLowercase[$message]]] Purplets
+;yes]
+
+$addField[Previous balance:;
+$getVar[purplet] $getVar[bank;$authorID] Purplets
+;yes]
+]
+
+$footer[$getVar[prefix]buy ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

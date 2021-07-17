@@ -1,0 +1,14 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$setVar[Name;Not set;$authorID]
+$setVar[Profile badges;None;$authorID]
+$setVar[userbanner;;$authorID]
+$setVar[About;Not set;$authorID]
+
+$title[$getVar[correct] Profile reset successfully!]
+$description[Your name, about message, displayed profile banner and profile badge list were reset. Don't worry, your inventory was not reset, so you can still apply your purchased badges and banners to your profile!]
+$footer[$getVar[prefix]reset profile • Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+$color[$getVar[border color;$authorID]]

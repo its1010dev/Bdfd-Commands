@@ -1,0 +1,31 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$author[$username[$findUser[$message]]#$discriminator[$findUser[$message]] // Profile]
+
+$title[
+$replaceText[$getVar[Name;$findUser[$message]];Not set;$username[$findUser[$message]];1]
+]
+
+$description[
+
+$addField[🎖 Awards:
+;$getVar[rep;$findUser[$message]] awards;yes]
+
+$addField[📛 Badges: 
+;$getVar[Profile badges;$findUser[$message]] ⠀;yes]
+
+$addField[💬 About:
+;$getVar[About;$findUser[$message]];no]
+
+]
+
+$thumbnail[$userAvatar[$findUser[$message]]?size=512]
+
+$image[$getVar[userbanner;$findUser[$message]]]
+
+$footer[$getVar[prefix]profile ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$findUser[$message]]]

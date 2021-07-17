@@ -1,0 +1,22 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$globalCooldown[24h;$getVar[wrong] **You need to wait %time% before you can give another award.**]
+$enabled[$getServerVar[category profile];$getVar[wrong] **This command is currently disabled on this server.**]
+$onlyIf[$findUser[$message]!=$authorID;$getVar[wrong] **You can't give awards to yourself.**]
+$argsCheck[>1;$getVar[wrong] **You need to mention someone to give them an award.**]
+
+$setVar[rep;$sum[$getVar[rep;$findUser[$message]];1];$findUser[$message]]
+
+$title[$getVar[correct] Award given]
+
+$description[
+$username[$findUser[$message]] has been given an award by $username.
+
+$addField[$username[$findUser[$message]]'s awards:;
+$sum[$getVar[rep;$findUser[$message]];1] awards;yes]
+]
+
+$footer[$getVar[prefix]award ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

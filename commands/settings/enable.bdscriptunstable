@@ -1,0 +1,17 @@
+$nomention
+$argsCheck[1;]
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$onlyIf[$getServerVar[category $toLowercase[$message[1]]]==no;$getVar[wrong] **This category is already enabled!**]
+$onlyAdmin[$getVar[wrong] **Only administrators can use this command.**]
+$onlyIf[$checkContains[$toLowercase[$message[1]];utility;economy;profile;inventory;moderation;fun]==true;$getVar[wrong] **This category does not exist!**]
+
+$setServerVar[category $toLowercase[$message[1]];yes]
+
+$title[$getVar[enable] Category enabled]
+
+$description[The $toLowercase[$message[1]] category of commands was enabled on $serverName[$guildID]]
+
+$footer[$getVar[prefix]enable ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

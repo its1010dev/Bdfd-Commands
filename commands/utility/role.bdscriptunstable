@@ -1,0 +1,35 @@
+$nomention
+$onlyIf[$isNumber[$message]==false;]
+$suppressErrors
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$argsCheck[>1;$getVar[wrong] **You need to insert a valid role name**]
+$enabled[$getServerVar[category utility];$getVar[wrong] **This command is currently disabled on this server.**]
+
+
+$title[Information about @$roleName[$findRole[$message]]]
+
+$addField[Mention:;
+<@&$findRole[$message]>;yes]
+
+$addField[ID:;
+$findRole[$message];yes]
+
+$addField[Role position:;
+$rolePosition[$findRole[$message]] out of $roleCount;yes]
+
+$addField[Mentionable:;
+$replaceText[$replaceText[$isMentionable[$findRole[$message]];true;Yes;1];false;No;1]
+;yes]
+
+$addField[Color:;
+#$getRoleColor[$findRole[$message]];yes]
+
+$addField[Role creation:;
+$creationDate[$findRole[$message]];yes]
+
+$thumbnail[https://api.alexflipnote.dev/color/image/$getRoleColor[$findRole[$message]]]
+
+$footer[$getVar[prefix]role ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

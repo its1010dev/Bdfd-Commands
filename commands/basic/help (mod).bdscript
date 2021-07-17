@@ -1,0 +1,29 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$onlyIf[$checkContains[$toLowercase[$message[1]];mod]==true;]
+$enabled[$getServerVar[category moderation];$getVar[wrong] **This category of commands is currently disabled on this server.**]
+
+$title[Help // Moderation:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]purge {amount}`
+Deletes the given amount of messages in the channel (doesn't remove pinned messages)
+• `$getVar[prefix]warn {user mention} {reason}`
+Warns the mentioned user with the reason, sent in the chosen modlog channel, and adds a strike to the strike count.
+• `$getVar[prefix]clear strikes {user mention}`
+Deletes the list of all previous strikes of the mentioned user.
+• `$getVar[prefix]strikes {user mention}`
+Gives the list of all the strikes of the mentioned user.
+• `$getVar[prefix]set modlog {channel mention}`
+Sets the channel where the moderation announcements/strike messages will be sent.
+
+• **Who is listed as a "Moderator"?**
+Every user who has the "Kick users" permission is considered as a moderator.
+]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

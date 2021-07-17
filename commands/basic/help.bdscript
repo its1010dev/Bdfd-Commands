@@ -1,0 +1,42 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$argsCheck[0;]
+
+$title[CRBT Command categories:]
+
+$addField[**Discover all of CRBT in a new way!**;
+Access the CRBT command list [here](https://blog.clembs.xyz/crbt/commands)
+;no]
+
+$addField[**$replaceText[$replaceText[$getServerVar[category utility];no;$getVar[disable];1];yes;$getVar[enable];1] `$getVar[prefix]help Utility`**;
+Commands that shows all kinds of useful infos
+;yes]
+
+$addField[**$replaceText[$replaceText[$getServerVar[category profile];no;$getVar[disable];1];yes;$getVar[enable];1] `$getVar[prefix]help Profile`**;
+To explore the possibilites the profiles have to offer
+;yes]
+
+$addField[**$replaceText[$replaceText[$getServerVar[category economy];no;$getVar[disable];1];yes;$getVar[enable];1] `$getVar[prefix]help Economy`**;
+Ways to earn, use and give your Purplets
+;yes]
+
+$addField[**$replaceText[$replaceText[$getServerVar[category fun];no;$getVar[disable];1];yes;$getVar[enable];1] `$getVar[prefix]help Fun`**;
+Some (maybe) funny commands
+;yes]
+
+$addField[**$replaceText[$replaceText[$getServerVar[category fun];no;$getVar[disable];1];yes;$getVar[enable];1] `$getVar[prefix]help Mod`**;
+Moderation commands and stuff related to them
+;yes]
+
+$addField[**<:forcedenabled:768832720557047829> `$getVar[prefix]help Basic`**;
+The basic stuff, commands you should remember
+;yes]
+
+$addField[**<:forcedenabled:768832720557047829> `$getVar[prefix]help Settings`**;
+Home to all of CRBT's settings
+;yes]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]

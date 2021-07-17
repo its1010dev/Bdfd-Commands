@@ -1,0 +1,34 @@
+$kickMention
+
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$onlyPerms[kick;$getVar[wrong] **You need some moderation power (kick permissions minimum) for me to kick users!**]
+$onlyIf[$mentioned[1]!=;$getVar[wrong] **You need to mention someone to kick them first!**]
+$onlyIf[$noMentionMessage!=;$getVar[wrong] **You need to enter a valid reason to kick!**]
+$enabled[$getServerVar[category moderation];$getVar[wrong] **This command is currently disabled on this server.**]
+
+$addCmdReactions[$getVar[correct]]
+
+$setUserVar[strikes;$sum[$getUserVar[strikes;$mentioned[1]];1];$mentioned[1]]
+$setUserVar[strikelog;$getUserVar[strikelog;$mentioned[1]], **⁅KICK⁆** $noMentionMessage - $date at $hour:$minute:$second;$mentioned[1]]
+
+$useChannel[$replaceText[$getServerVar[modlog channel];None;$channelID;1]]
+$authorIcon[$userAvatar[$mentioned[1]]]
+$author[Kick - $username[$mentioned[1]]#$discriminator[$mentioned[1]]]
+$description[
+$addField[User;
+<@$mentioned[1]>
+;yes]
+
+$addField[Reason;
+$noMentionMessage
+;yes]
+
+$addField[Moderator;
+<@$authorID>
+;yes]
+
+$addField[Strike count;
+$sum[$getUserVar[strikes;$mentioned[1]];1] out of 5 strikes
+]]
+$color[$getVar[red]]

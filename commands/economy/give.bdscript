@@ -1,0 +1,26 @@
+$nomention
+$blackListIDs[$getVar[blacklist];$getVar[wrong] **You are blacklisted from using CRBT, for more information, go to https://clembs.xyz/crbtsupport**]
+$onlyIf[$getVar[bank;$authorID]>0;$getVar[wrong] **You don't have any Purplets to give!**]
+$onlyIf[$noMentionMessage<$getVar[bank;$authorID];$getVar[wrong] **You don't have that much Purplets to give!**]
+$onlyIf[$mentioned[1]!=$authorID;$getVar[wrong] **You can't give any Purplets to yourself!**]
+$enabled[$getServerVar[category economy];$getVar[wrong] **This command is currently disabled on this server.**]
+$onlyIf[$noMentionMessage>0;$getVar[wrong] **You can't give no Purplets!**]
+$argsCheck[>2;$getVar[wrong] **You need to specify a correct amount of Purplets to give.**]
+
+$​setVar[bank;$​sum[$​getVar[bank;$​mentioned[1]];$​noMentionMessage];$​mentioned[1]]
+$​setVar[bank;$​sub[$​getVar[bank;$​authorID];$​noMentionMessage];$​authorID]
+
+$title[$getVar[correct] Purplets transfer]
+
+$description[$username, you successfully gave $noMentionMessage Purplets to $username[$mentioned[1]].
+
+$addField[Your new balance:
+;$getVar[purplet] $​sub[$​getVar[bank;$​authorID];$​noMentionMessage] Purplets;yes]
+
+$addField[$username[$mentioned[1]]'s new balance:
+;$getVar[purplet] $​sum[$​getVar[bank;$​mentioned[1]];$​noMentionMessage] Purplets;yes]
+]
+$footer[$getVar[prefix]give ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[green]]

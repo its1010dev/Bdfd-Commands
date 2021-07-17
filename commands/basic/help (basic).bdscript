@@ -1,0 +1,18 @@
+$onlyIf[$checkContains[$toLowercase[$message[1]];basic]==true;]
+
+$nomention
+
+$title[Help // Basic commands:]
+
+$description[
+`< >` is optional arguments ;  `{ }` is mendatory arguments
+
+• `$getVar[prefix]help <category>` : Displays all categories, or all commands of the specified category.
+• `@CRBT` : To have some useful commands at hand.
+• `$getVar[betaprefix]help` : Displays all available beta commands.
+• `$getVar[prefix]ping` : Returns CRBT's ping and some useful info about his servers.]
+
+$footer[$getVar[prefix]help ▪ Executed by $username#$discriminator[$authorID]]
+$footerIcon[$authorAvatar]
+
+$color[$getVar[border color;$authorID]]
