@@ -1,4 +1,4 @@
-# CRBT (BDScript)
+# (BDScript)
 
 ## A fully functional and customizable Discord bot, now open-sourced!
 
